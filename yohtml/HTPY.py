@@ -11,6 +11,15 @@ def html(lang = str):
         tag_02 = '<html lang="ko">'
         return tag_02
 
+def li(ListClass=str, text=str):
+    if not ListClass:
+        tag_01 = '<li>' + text + '</li>'
+        return tag_01
+    elif ListClass:
+        tag_02 = '<li class='+ ListClass + '>' + text + '</li>'
+        return tag_02
+    
+
 def body():
     tag_01 = '<body>'
     return tag_01
