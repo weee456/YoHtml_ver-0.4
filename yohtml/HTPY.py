@@ -1,3 +1,4 @@
+
 def DOCTYPE(type = str):
     if type == 'html':
         DOC = '<!DOCTYPE html>'
@@ -11,37 +12,56 @@ def html(lang = str):
         tag_02 = '<html lang="ko">'
         return tag_02
 
-def li(ListClass=str, text=str):
-    if not ListClass:
-        tag_01 = '<li>' + text + '</li>'
-        return tag_01
-    elif ListClass:
-        tag_02 = '<li class='+ ListClass + '>' + text + '</li>'
+def li(text2=str):
+        tag_02 = '<li>' + text2 + '</li>'
         return tag_02
-    
 
+
+
+
+def style(Class2=str, Inside2=str, Color2=str):
+    if Class2 == 'a':
+        if Inside2 == 'Background-color':
+            Inside2.__init__()
+            Inside2 = '{Background-color:'+ Color2 +';}'
+            tag_2 = '<style> .'+ Class2 + Inside2 +'</style>' 
+            return tag_2
+        else:
+            tag_2 = '<style>.a {Background-color:'+ Color2 +';} </style>'
+            return tag_2
+
+
+
+def Button(Class2=str, text2=str):
+    if not Class2:
+        tag_01 = '<Button>' + text2 + '</Button>'
+        return tag_01
+    elif Class2:
+        tag_02 = '<Button class="'+ Class2 +'">'+ text2 +'</Button>'
+        return tag_02
+                    
 def body():
     tag_01 = '<body>'
     return tag_01
 
-def Text(size=str, text=str):
-    if size == 'h1':
-        tag_01 = '<h1>' + text + '</h1>'
+def Text(size2=str, text2=str):
+    if size2 == 'h1':
+        tag_01 = '<h1>' + text2 + '</h1>'
         return tag_01
-    elif size == 'h2':
-        tag_02 = '<h2>' + text + '</h2>'
+    elif size2 == 'h2':
+        tag_02 = '<h2>' + text2 + '</h2>'
         return tag_02
-    elif size == 'h3':
-        tag_03 = '<h3>' + text + '</h3>'
+    elif size2 == 'h3':
+        tag_03 = '<h3>' + text2 + '</h3>'
         return tag_03
-    elif size == 'h4':
-        tag_04 = '<h4>' + text + '</h4>'
+    elif size2 == 'h4':
+        tag_04 = '<h4>' + text2 + '</h4>'
         return tag_04
-    elif size == 'h5':
-        tag_05 = '<h5>' + text + '</h5>'
+    elif size2 == 'h5':
+        tag_05 = '<h5>' + text2 + '</h5>'
         return tag_05
-    elif size == 'h6': 
-        tag_06 = '<h6>' + text + '</h6>'
+    elif size2 == 'h6': 
+        tag_06 = '<h6>' + text2 + '</h6>'
         return tag_06
 
 def all_close():
