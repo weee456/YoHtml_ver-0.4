@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name="YoHtml",
-    version="0.2",
+    version="0.3",
     license='MIT',
     author="weee456",
     author_email="jhweee456@outlook.com",
